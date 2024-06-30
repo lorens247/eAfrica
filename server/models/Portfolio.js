@@ -16,6 +16,10 @@ const PortfolioSchema = new mongoose.Schema({
         type: Number,
         required: true,
       },
+      currentPrice: {
+        type: Number,
+        default: 0,
+      },
     },
   ],
 });

@@ -32,7 +32,7 @@ const Dashboard = () => {
           <ul>
             {portfolio.coins.map((coin) => (
               <li key={coin.symbol}>
-                {coin.symbol}: {coin.amount}
+                {coin.symbol}: {coin.amount} (Current Price: ${coin.currentPrice})
               </li>
             ))}
           </ul>

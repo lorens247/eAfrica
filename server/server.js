@@ -2,6 +2,7 @@ const express = require('express');
 const connectDB = require('./config/db');
 const authRoutes = require('./routes/authRoutes');
 const portfolioRoutes = require('./routes/portfolioRoutes');
+const { startJobService } = require('./services/jobService');
 
 const app = express();
 
@@ -10,6 +11,9 @@ require('dotenv').config();
 
 // Connect to MongoDB
 connectDB();
+
+// Start job service
+startJobService();
 
 // Middleware
 app.use(express.json()); // Parse incoming JSON requests
