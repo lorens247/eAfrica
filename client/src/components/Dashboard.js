@@ -38,7 +38,7 @@ const Dashboard = () => {
           </ul>
         </div>
       ) : (
-        <p>Loading...</p>
+        <p>Dashboard loaded</p>
       )}
     </div>
   );
